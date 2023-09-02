@@ -9,6 +9,15 @@ body {
 
 
 /* ==============common style section============= */
+.text-light-gray{
+    color: #727272;
+}
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700px;
+    color: #131313;
+}
+
 .description {
     color: #727272;
     font-size: 1rem;
@@ -111,6 +120,31 @@ main {
     padding-left: 3.7rem;
 }
 
+/* ================Features section style=============== */
+
+
+/* ====================fact section style============== */
+
+.fact{
+    margin-top: 4rem;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+
+}
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 20px;
+}
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+}
+
 /* ===========responsive style for small device============= */
 
 @media screen and (max-width:576px) {
@@ -134,7 +168,8 @@ main {
         text-align: center;
         flex-direction: column;
     }
-    .teams-img-content{
+
+    .teams-img-content {
         gap: 0;
     }
 }
@@ -146,7 +181,8 @@ main {
         padding: 50px;
     }
 
-    nav, .teams-container{
+    nav,
+    .teams-container {
         flex-direction: column-reverse;
         text-align: center;
     }
