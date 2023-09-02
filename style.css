@@ -13,7 +13,7 @@ body {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .btn-primary {
@@ -84,8 +84,35 @@ nav li a {
     width: 100%;
 }
 
+/* ================main Section Style============ */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ===============Team Section Style============== */
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.teams-img-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-right: 3.7rem;
+    padding-left: 3.7rem;
+}
 
 /* ===========responsive style for small device============= */
+
 @media screen and (max-width:576px) {
     header {
         padding: 0;
@@ -102,14 +129,25 @@ nav li a {
     .banner-title {
         font-size: 2rem;
     }
+
+    .teams-container {
+        text-align: center;
+        flex-direction: column;
+    }
+    .teams-img-content{
+        gap: 0;
+    }
 }
 
 /* ===========responsive style for medium device============= */
+
 @media screen and (min-width:577px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav{
-        flex-direction: column;
+
+    nav, .teams-container{
+        flex-direction: column-reverse;
+        text-align: center;
     }
 }
