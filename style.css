@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* ==============common style section============= */
+.description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    border: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* ===========navigation section style================ */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* ===================Banner style================== */
+
+.banner {
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* ===========responsive style for small device============= */
+@media screen and (max-width:576px) {
+    header {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+}
+
+/* ===========responsive style for medium device============= */
+@media screen and (min-width:577px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
